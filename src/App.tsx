@@ -28,16 +28,24 @@ const getRandomPosition = () => {
 function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
+  const [noButtonPosition, setNoButtonPosition] = useState({
+    top: "20px",
+    left: "220px",
+  });
+
   const yes = noCount * 20 + 16; // Calculation for font size or other purposes
 
   function handleNoClick() {
     setNoCount(noCount + 1);
+    if (noCount === 0) {
+      setNoButtonPosition(getRandomPosition());
+    }
   }
 
   function getNoButtonText() {
     return phrase[Math.min(noCount, phrase.length - 1)];
   }
-  const position = getRandomPosition();
+  const initialNoButtonPosition = { top: "680px", down: "500px" };
   return (
     <div className="ValentineCard">
       {yesPressed ? (
@@ -79,7 +87,10 @@ function App() {
           <button
             onClick={handleNoClick}
             className="NoButton"
-            style={{ ...position, position: "absolute" }}
+            style={{
+              position: "absolute",
+              ...(noCount > 0 ? noButtonPosition : initialNoButtonPosition),
+            }}
           >
             {getNoButtonText()}
           </button>
