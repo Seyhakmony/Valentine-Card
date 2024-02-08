@@ -45,7 +45,7 @@ function App() {
   function getNoButtonText() {
     return phrase[Math.min(noCount, phrase.length - 1)];
   }
-  const initialNoButtonPosition = { top: "680px", down: "500px" };
+  const initialNoButtonPosition = { top: "700px", down: "500px" };
   return (
     <div className="ValentineCard">
       {yesPressed ? (
