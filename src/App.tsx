@@ -29,23 +29,20 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const [noButtonPosition, setNoButtonPosition] = useState({
-    top: "20px",
-    left: "220px",
+    top: "700px",
   });
 
   const yes = noCount * 20 + 16;
 
   function handleNoClick() {
     setNoCount(noCount + 1);
-    if (noCount === 0) {
-      setNoButtonPosition(getRandomPosition());
-    }
+    setNoButtonPosition(getRandomPosition());
   }
 
   function getNoButtonText() {
     return phrase[Math.min(noCount, phrase.length - 1)];
   }
-  const initialNoButtonPosition = { top: "750px", down: "500px" };
+
   return (
     <div className="ValentineCard">
       {yesPressed ? (
@@ -89,7 +86,7 @@ function App() {
             className="NoButton"
             style={{
               position: "absolute",
-              ...(noCount > 0 ? noButtonPosition : initialNoButtonPosition),
+              ...noButtonPosition,
             }}
           >
             {getNoButtonText()}
