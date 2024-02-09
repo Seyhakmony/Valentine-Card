@@ -18,7 +18,7 @@ const phrase = [
   // "Actually, never mind, I need you",
   // "So please give me a chance",
   "You know I use to play D2",
-  "I kind of droll a little",
+  "I kind of drooll a little",
   "I will always pay for your ice cream",
   "One Chance",
   "Son Heung-min is the goat",
