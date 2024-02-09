@@ -5,7 +5,7 @@
   justify-content: center;
   height: 100vh;
 
-  background-color: white;
+  background-color: pink;
 }
 
 p {
@@ -22,7 +22,7 @@ p {
     Cursive;
   height: 500px;
   width: 500px;
-  color: pink;
+  color: red;
   font-size: 50px;
 }
 .flower {
