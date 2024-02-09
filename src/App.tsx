@@ -38,8 +38,12 @@ const moreImg = [
 ];
 
 const getRandomPosition = () => {
-  const y = window.innerHeight * Math.random();
-  const x = window.innerWidth * Math.random();
+  const screenHeight = window.innerHeight;
+  const screenWidth = window.innerWidth;
+  const buttonHeight = 50;
+  const buttonWidth = 100;
+  const y = Math.random() * (screenHeight - buttonHeight);
+  const x = Math.random() * (screenWidth - buttonWidth);
   return { top: `${y}px`, left: `${x}px` };
 };
 
@@ -47,7 +51,7 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const [noButtonPosition, setNoButtonPosition] = useState({
-    top: "700px",
+    top: "650px",
   });
   const [currentImg, setCurrentImg] = useState(firstImg);
 
@@ -73,53 +77,58 @@ function App() {
     <div className="ValentineCard">
       {yesPressed ? (
         <>
-          <img
-            alt="this could be us"
-            // src="https://c.tenor.com/nfhDavLGkZEAAAAC/tenor.gif"
-            src="https://media1.tenor.com/m/qJaeM0KuE5UAAAAC/cat-cats.gif"
-          />
-          <div className="Text">You won't regret this.</div>
+          <div className="final-Background">
+            <img
+              className="final"
+              alt="this could be us"
+              // src="https://c.tenor.com/nfhDavLGkZEAAAAC/tenor.gif"
+              src="https://media1.tenor.com/m/qJaeM0KuE5UAAAAC/cat-cats.gif"
+            />
+            <div className="Text">You won't regret this.</div>
+          </div>
         </>
       ) : (
         <>
-          <img className="flower" alt="end game start" src={currentImg} />
-          {/* <img
+          <div className="front-Background">
+            <img className="flower" alt="end game start" src={currentImg} />
+            {/* <img
             className="flower"
             alt="end game start"
             // src="https://c.tenor.com/g3Q53yKDdloAAAAd/tenor.gif"
             src="https://media.tenor.com/OzNPe52enwwAAAAi/mochi-cat-love.gif"
           /> */}
-          <div
-            className="question"
-            style={{ display: "flex", alignItems: "center" }}
-          >
-            <p>Will you be my Valentine?</p>
-            <img
-              className="heart"
-              alt="heart"
-              src="https://media.tenor.com/xdtd4CYBFk0AAAAi/tonton-tontonsticker.gif"
-              style={{ marginLeft: "10px" }}
-            />
+            <div
+              className="question"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <p>Will you be my Valentine?</p>
+              <img
+                className="heart"
+                alt="heart"
+                src="https://media.tenor.com/xdtd4CYBFk0AAAAi/tonton-tontonsticker.gif"
+                style={{ marginLeft: "10px" }}
+              />
+            </div>
+            <button
+              className="YesButton"
+              style={{ fontSize: `${yes}px` }}
+              onClick={() => setYesPressed(true)}
+            >
+              Yes
+            </button>
+            <br />
+            <br />
+            <button
+              onClick={handleNoClick}
+              className="NoButton"
+              style={{
+                position: "absolute",
+                ...noButtonPosition,
+              }}
+            >
+              {getNoButtonText()}
+            </button>
           </div>
-          <button
-            className="YesButton"
-            style={{ fontSize: `${yes}px` }}
-            onClick={() => setYesPressed(true)}
-          >
-            Yes
-          </button>
-          <br />
-          <br />
-          <button
-            onClick={handleNoClick}
-            className="NoButton"
-            style={{
-              position: "absolute",
-              ...noButtonPosition,
-            }}
-          >
-            {getNoButtonText()}
-          </button>
         </>
       )}
     </div>
