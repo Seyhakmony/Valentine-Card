@@ -174,7 +174,7 @@ function App() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
   const [noButtonPosition, setNoButtonPosition] = useState({
-    top: "650px",
+    top: "700px",
   });
   const [currentImg, setCurrentImg] = useState(firstImg);
 
