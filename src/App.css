@@ -12,9 +12,29 @@
 .final {
   align-items: center;
   justify-content: center;
-  height: auto;
-  max-width: 90%;
+  padding-top: 10px;
+  height: 300px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 15px;
 }
+@keyframes slideLeftToRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.secondfinal {
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 100%;
+  animation: slideLeftToRight 5s infinite;
+}
+
 .front-Background {
   display: flex;
   flex-direction: column;
