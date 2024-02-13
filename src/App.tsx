@@ -2,11 +2,71 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 const phrase = [
-  "No",
-  "Are you Sure?",
-  "Really Sure?",
-  "제발...",
-  "I will treat you well",
+  <div style={{ textAlign: "center" }}>
+    No{" "}
+    <img
+      src="https://media.tenor.com/VOQM9bXxYdQAAAAj/anime.gif"
+      alt="No"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    Are you sure?{" "}
+    <img
+      src="https://media1.tenor.com/m/NW8Q1vamszYAAAAC/haikyuu-cry.gif"
+      alt="Are you sure?"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    Really Sure?{" "}
+    <img
+      src="https://media.tenor.com/zkVAO6hRoSkAAAAM/pink-hair-anime-girl-anya.gif"
+      alt="Really Sure?"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    제발...{" "}
+    <img
+      src="https://media.tenor.com/KjQIiEfZ0G4AAAAj/sad-tears.gif"
+      alt="제발..."
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    I will treat you well{" "}
+    <img
+      src="https://media.tenor.com/I60osis2Vz8AAAAj/yoosung-cry.gif"
+      alt="I will treat you well"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
   <div style={{ textAlign: "center" }}>
     I'm going to cry{" "}
     <img
