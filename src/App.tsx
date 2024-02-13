@@ -5,23 +5,86 @@ const phrase = [
   "No",
   "Are you Sure?",
   "Really Sure?",
-  // "제발...",
-  // "I will treat you well",
-  // "I'm going to cry",
-  // "You're breaking my heart ;(",
-  // "제발...",
-  // "Give me a chance",
-  // "1 chance",
-  // "I even pay for your ice cream",
-  // "You know what, I dont need you",
-  // "I'm better without you in my life",
-  // "Actually, never mind, I need you",
-  // "So please give me a chance",
-  "You know I use to play D2",
-  "I kind of droll a little",
-  "I will always pay for your ice cream",
-  "One Chance",
-  "Son Heung-min is the goat",
+  "제발...",
+  "I will treat you well",
+  <div style={{ textAlign: "center" }}>
+    I'm going to cry{" "}
+    <img
+      src="https://media.tenor.com/qVJBrbsBk8EAAAAj/pixel-art-gmail.gif"
+      alt="Crying"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    You're breaking my heart{" "}
+    <img
+      src="https://media.tenor.com/iEE8Br03ARAAAAAj/broken-heart.gif"
+      alt="Broken Heart"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    제발...{" "}
+    <img
+      src="https://media.tenor.com/PD35MO9QgugAAAAj/ensemble-stars-enstars.gif"
+      alt="Please"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    Give me a chance{" "}
+    <img
+      src="https://media.tenor.com/usAx4sFHmRwAAAAj/chibi-yhad.gif"
+      alt="Chance"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    So please give me a chance{" "}
+    <img
+      src="https://media.tenor.com/cXWKB9TZXzIAAAAM/mob-psycho100-mob-psycho.gif"
+      alt="Mob Psycho"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
+  <div style={{ textAlign: "center" }}>
+    Pretty please{" "}
+    <img
+      src="https://media.tenor.com/gK7dlrpvSjQAAAAM/haikyuu-heart.gif"
+      alt="Pretty Please"
+      style={{
+        display: "block",
+        margin: "auto",
+        width: "100px",
+        height: "auto",
+      }}
+    />
+  </div>,
 ];
 
 const firstImg = "https://media.tenor.com/OzNPe52enwwAAAAi/mochi-cat-love.gif";
@@ -82,9 +145,14 @@ function App() {
               className="final"
               alt="this could be us"
               // src="https://c.tenor.com/nfhDavLGkZEAAAAC/tenor.gif"
-              src="https://media1.tenor.com/m/qJaeM0KuE5UAAAAC/cat-cats.gif"
+              src="https://media.tenor.com/19U-yYDYFvYAAAAM/happy-x-mas.gif"
             />
-            <div className="Text">You won't regret this.</div>
+            <div className="Text">Thank You for saying yes.</div>
+            <img
+              className="secondfinal"
+              alt="this could be us"
+              src="https://media.tenor.com/ZQndYO4NwBcAAAAM/gojo-satoru.gif"
+            />
           </div>
         </>
       ) : (
