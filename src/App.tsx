@@ -189,7 +189,11 @@ function App() {
       setCurrentImg(moreImg[index]);
     }
   }, [noCount]);
-
+  
+  useEffect(() => {
+  setNoButtonPosition(getRandomPosition());
+}, []);
+  
   function handleNoClick() {
     setNoCount(noCount + 1);
     setNoButtonPosition(getRandomPosition());
@@ -247,6 +251,8 @@ function App() {
             >
               Yes
             </button>
+            <br />
+            <br />
             <button
               onClick={handleNoClick}
               className="NoButton"
