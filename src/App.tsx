@@ -181,7 +181,7 @@ function App() {
 
   
   const yes = Math.min(noCount * 20 + 16, maxYes);
-  const noButton = Math.min(16, maxYes - yes);
+
   
   useEffect(() => {
     if (noCount > 0) {
@@ -254,7 +254,6 @@ function App() {
               className="NoButton"
               style={{
                 position: "absolute",
-                fontSize: `${noButton}px`,
                 ...noButtonPosition,
               }}
             >
