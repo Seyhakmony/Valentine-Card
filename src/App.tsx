@@ -247,13 +247,12 @@ function App() {
             >
               Yes
             </button>
-            <br />
-            <br />
             <button
               onClick={handleNoClick}
               className="NoButton"
               style={{
                 position: "absolute",
+                fontSize: `16px`,
                 ...noButtonPosition,
               }}
             >
