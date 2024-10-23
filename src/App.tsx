@@ -177,9 +177,12 @@ function App() {
     top: "620px",
   });
   const [currentImg, setCurrentImg] = useState(firstImg);
+  const maxYes = 100;
 
-  const yes = noCount * 20 + 16;
-
+  
+  const yes = Math.min(noCount * 20 + 16, maxYes);
+  const noButton = maxYes - yes + 16;
+  
   useEffect(() => {
     if (noCount > 0) {
       const index = Math.min(noCount - 1, moreImg.length - 1);
@@ -251,6 +254,7 @@ function App() {
               className="NoButton"
               style={{
                 position: "absolute",
+                fontSize: `${noButton}px`,
                 ...noButtonPosition,
               }}
             >
