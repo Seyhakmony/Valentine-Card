@@ -165,8 +165,8 @@ const getRandomPosition = () => {
   const screenWidth = window.innerWidth;
   const buttonHeight = 50;
   const buttonWidth = 100;
-  const y = Math.random() * (screenHeight - buttonHeight);
-  const x = Math.random() * (screenWidth - buttonWidth);
+  const y = Math.random() * (screenHeight - buttonHeight - 20);
+  const x = Math.random() * (screenWidth - buttonWidth - 20);
   return { top: `${y}px`, left: `${x}px` };
 };
 
