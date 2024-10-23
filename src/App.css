@@ -12,11 +12,11 @@
 .final {
   align-items: center;
   justify-content: center;
-  padding-top: 10px;
-  height: 300px;
+  padding-top: 0rem;
+  height: 18.75rem;
   max-width: 100%;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 @keyframes slideLeftToRight {
   from {
@@ -27,7 +27,7 @@
   }
 }
 .secondfinal {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   align-items: center;
   justify-content: center;
   height: auto;
@@ -42,7 +42,7 @@
   align-items: center;
   background-image: url("https://cdnb.artstation.com/p/marketplace/presentation_assets/002/868/241/large/file.jpg?1689637635");
   height: 100vh;
-  width: 125vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -55,7 +55,7 @@
   align-items: center;
   background-image: url("https://cdnb.artstation.com/p/marketplace/presentation_assets/002/868/239/large/file.jpg?1689637623");
   height: 100vh;
-  width: 125vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -69,30 +69,33 @@ p {
 }
 
 .Text {
-  padding-top: 30px;
+  padding-top: 1.875rem;
   text-align: center;
   font-family: "Great Vibes", cursive;
-  height: 100px;
-  width: 600px;
+  height: 6.25rem;
+  width: 37.5rem;
   color: red;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
 }
+
 .flower {
-  height: 400px;
-  width: 400px;
+  height: 25rem;
+  width: 25rem;
 }
+
 .heart {
-  height: 60px;
-  width: 60px;
+  height: 3.75rem;
+  width: 3.75rem;
 }
+
 .YesButton {
-  border-radius: 15px;
+  border-radius: 0.9375rem;;
   color: white;
   background-color: green;
 }
 .NoButton {
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   color: white;
   background-color: red;
 }
