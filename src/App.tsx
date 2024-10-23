@@ -181,7 +181,7 @@ function App() {
 
   
   const yes = Math.min(noCount * 20 + 16, maxYes);
-  const noButton = Math.max(16, maxYes - yes);
+  const noButton = Math.min(16, maxYes - yes);
   
   useEffect(() => {
     if (noCount > 0) {
